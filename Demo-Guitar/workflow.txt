@@ -1,0 +1,3 @@
+- spatialize anechoic: 		\GitarreAnechoic\startSPATIALIZE.m
+- spatialize with reverb:	\GitarreSmallRoom\startSPATIALIZE.m
+- use \Matlab\FadeWaved.m to merge both outputs

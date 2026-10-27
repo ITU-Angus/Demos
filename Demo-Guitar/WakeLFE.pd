@@ -1,0 +1,25 @@
+#N canvas 644 282 544 250 10;
+#X obj 55 145 readsf~ 1;
+#X obj 55 29 inlet;
+#X text 104 27 bang triggers WakeLFE;
+#X text 224 100 sound file WakeLFE.wav must be in Data directory;
+#X text 129 145 1 channel;
+#X text 109 189 play on output channel 17 (LFE);
+#X obj 176 169 print LFEawake;
+#X obj 55 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 55 74 t b b;
+#X msg 20 102 1;
+#X text 43 102 start;
+#X obj 54 188 dac~ 17;
+#X text 267 168 show output when done playing;
+#X text 97 73 bang output from right to left;
+#X msg 82 101 open Data/WakeLFE.wav;
+#X connect 0 0 11 0;
+#X connect 0 1 6 0;
+#X connect 1 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 1 14 0;
+#X connect 9 0 0 0;
+#X connect 14 0 0 0;

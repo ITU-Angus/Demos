@@ -1,0 +1,9 @@
+/Demo-*/Measurement/*.WAV
+/Demo-*/Data/*.aup
+*.rpp-bak
+/Demo-*/Reaper/Media/*.WAV
+/Demo-*/Data/*.wav
+/Demo-*/*/*.wav
+/Demo-*/Data/*.aup3
+*.bak
+*.reapeaks
